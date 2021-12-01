@@ -32,12 +32,6 @@ class Spaceship extends Floater
     public void getCenterX(int x) {
       myCenterY = x;
     }
-    public void keyPressed() {
-      if(key == 'h') {
-        bob.setXspeed(0);
-        bob.setYspeed(0);
-      }
-    }
     public void hyperspace() {
       myCenterX = Math.random()*400;
       myCenterY = Math.random()*400;

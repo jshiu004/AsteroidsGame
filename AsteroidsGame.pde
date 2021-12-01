@@ -22,7 +22,7 @@ public void draw()
   bob.move();
   bob.show();
 }
-  void keyPressed() {
+  if(keyPressed) {
     if(key == 'a' || key == 'A') {
     bob.turn(-10);
    }

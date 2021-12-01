@@ -23,6 +23,9 @@ public void draw()
    if(key == 'a' || key == 'A') {
      bob.turn(-10);
    }
+   if(key == 'd' || key == 'D') {
+     bob.turn(10);
+   }
    if(key == 'w' || key == 'W') {
      bob.accelerate(0.6);
    }

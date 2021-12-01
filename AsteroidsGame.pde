@@ -33,9 +33,7 @@ public void draw()
      bob.accelerate(-0.6);
    }
    if(key == ' ') {
-     myCenterX = Math.random()*400;
-     myCenterY = Math.random()*400;
-     myPointDirection = Math.random()*PI;
+     bob.hyperspace();
    }
   }
   bob.move();

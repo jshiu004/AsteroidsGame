@@ -19,9 +19,9 @@ public void draw()
   for(int i = 0; i < sue.length; i++) {
     sue[i].show();
   }
-  if(keyPressed) {
-   if(key == 'a' || key == 'A') {
-     bob.turn(-10);
+  void keyPressed() {
+    if(key == 'a' || key == 'A') {
+    bob.turn(-10);
    }
    if(key == 'd' || key == 'D') {
      bob.turn(10);

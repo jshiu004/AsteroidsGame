@@ -19,6 +19,9 @@ public void draw()
   for(int i = 0; i < sue.length; i++) {
     sue[i].show();
   }
+  bob.move();
+  bob.show();
+}
   void keyPressed() {
     if(key == 'a' || key == 'A') {
     bob.turn(-10);
@@ -36,6 +39,3 @@ public void draw()
      bob.hyperspace();
    }
   }
-  bob.move();
-  bob.show();
-}

@@ -32,8 +32,12 @@ public void draw()
    if(key == 's' || key == 'S') {
      bob.accelerate(-0.6);
    }
+   if(key == ' ') {
+     myCenterX = Math.random()*400;
+     myCenterY = Math.random()*400;
+     myPointDirection = Math.random()*PI;
+   }
   }
   bob.move();
   bob.show();
 }
-

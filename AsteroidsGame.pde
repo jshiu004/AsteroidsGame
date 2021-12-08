@@ -1,6 +1,7 @@
 //your variable declarations here
 Star [] sue;
 Spaceship bob;
+ArrayList <Asteroid> tom;
 public void setup() 
 {
   //your code here
@@ -8,8 +9,14 @@ public void setup()
   background(0);
   bob = new Spaceship();
   sue = new Star[100];
+  tom = new ArrayList <Asteroid>();
+  for(int i = 0; i < 10; i++) {
+    tom.add(new Asteroid());
+  }
   for(int i = 0; i < sue.length; i++) {
     sue[i] = new Star();
+  }
+  for(int i = 0; i < 5; i++) {
   }
 }
 public void draw() 
@@ -21,6 +28,14 @@ public void draw()
   }
   bob.move();
   bob.show();
+  for(int i = 0; i < tom.size(); i++) {
+    tom.get(i).move();
+    tom.get(i).show();
+    float d = dist((float)bob.getCenterX(), (float)bob.getCenterY(), (float)tom.get(i).getCenterX(), (float)tom.get(i).getCenterY());
+    if(d < 10) {
+      tom.remove(i);
+    }
+  }
 }
   public void keyPressed() {
     if(key == 'a' || key == 'A') {
@@ -38,4 +53,4 @@ public void draw()
    if(key == ' ') {
      bob.hyperspace();
    }
-  }
+}

@@ -39,10 +39,10 @@ public void draw()
 }
   public void keyPressed() {
     if(key == 'a' || key == 'A') {
-    bob.turn(-10);
+    bob.turn(-20);
    }
    if(key == 'd' || key == 'D') {
-     bob.turn(10);
+     bob.turn(20);
    }
    if(key == 'w' || key == 'W') {
      bob.accelerate(0.6);

@@ -1,7 +1,7 @@
 public class Asteroid extends Floater {
   private double spdofrot;
   public Asteroid() {
-    spdofrot = 1.5;
+    spdofrot = 3.0*(int)(Math.random()*2) - 1;
     corners = 6;
     xCorners = new int[corners];
     yCorners = new int[corners];
